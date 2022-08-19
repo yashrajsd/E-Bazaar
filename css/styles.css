@@ -1,0 +1,105 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* navbar styles */
+
+hr{
+    position: relative;
+    bottom: 9px;
+}
+
+.container-fluid{
+    padding: 0px;
+}
+
+.logo-{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+}
+
+.nav-text{
+    font-family: 'Secular One', sans-serif;
+    margin: 2px;
+}
+
+.nav-link{
+    font-size: 1.3rem;
+}
+
+#title{
+    padding: 0.5% 10%;
+    margin-bottom: 2rem;
+}
+
+.title-text{
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+}
+
+.div-title{
+    margin-top: 0.5%;
+}
+
+.highlight-text{
+    color: #198754;
+}
+
+/*title images css*/
+
+.div-farmer-img{
+    text-align: center;
+    overflow: hidden;
+}
+
+.farmer{
+    width: 35rem;
+    position: relative;
+    top: 5%;
+    animation: farmer 10s infinite ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes farmer {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(2deg);
+    }
+    75%{
+        transform: rotate(-4deg);
+    }
+    100%{
+        transform: rotate(2deg);
+    }
+}
+
+
+/*sign up card*/
+
+.sign-up-card{
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.about-link:hover{
+    color: black;
+}
+
+
+
+
+/* Sign in page css */
+
+.sign-in-glass{
+    background: linear-gradient(135deg, rgba(255, 255, 255,0.1), rgba(255, 255,255,0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
