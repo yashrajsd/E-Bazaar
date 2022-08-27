@@ -20,6 +20,7 @@
 
     
 </head>
+
 <body>
     <div class="mainContainer">
         <div class="formContainer">
@@ -30,11 +31,16 @@
                 <div class="headingDiv">
                     <h4>WELCOME</h4>
                 </div>
-                <label for="username">USERNAME</label>
-                <i class="fa fa-user"></i>
-                <input type="text" name="username"  autocomplete="off">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" >
+                <span class="inputFields">
+                    <label for="username">USERNAME</label>
+                    <input type="text" name="username"  autocomplete="off">
+                    <i class="fa fa-user"></i>
+                </span>
+                <span class="inputFields">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" >
+                    <i class="fa fa-lock"></i>
+                </span>
 
                 <a class="forgotPassword" href="#">FORGOT PASSWORD</a>
 
@@ -42,6 +48,8 @@
             </form>
         </div>
     </div>
-    
+
+    <!-- scripts -->
+    <script src="https://kit.fontawesome.com/433888fe69.js" crossorigin="anonymous"></script>
 </body>
 </html>

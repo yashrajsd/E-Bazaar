@@ -3,6 +3,8 @@ body{
     background-color: #198754;
 }
 
+
+/* SECTION for login panel */
 .mainContainer{
     float: right;
     display: flex;
@@ -13,7 +15,10 @@ body{
     align-items: center;
 }
 
-.formContainer{
+
+
+/* login container div POSITIONING AND SIZE */
+.loginContainer{
     display: flex;
     justify-content: center;
     height: 50vh;
@@ -25,35 +30,69 @@ form{
 }
 
 
+
+
+/* INPUT ELEMENT DECORATION  */
 input{
     border: none;
     border-bottom: 2px solid rgb(152, 164, 160);
     background: none;
-    padding: 0.5rem;
     padding: 0.5rem 0 0.5rem 0;
     font-size: 1rem;
     margin-bottom: 0.5rem;
     width: 100%;
 }
+label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    display: block;
+    color: #999;
+    transform: translate(0, 5px);
+  }
 
-input[type=text]:focus {
+
+
+
+
+/* FOCUS EVENT */
+/* input field */
+
+input[type=text]:focus{
     border-bottom: 2.5px solid rgb(59, 220, 203);
     outline: none;
 }
-input[type=password]:focus {
+input[type=password]:focus{
     border-bottom: 2.5px solid rgb(62, 255, 204);
     outline: none;
 }
 
+/* FOCUS EVENT */
+/* font icon */
 
-.headingDiv{
-    display: flex;
-    font-family: 'Oswald', sans-serif;
-    font-size: 3rem;
-    margin: 1rem;
-    justify-content: center;
+i {
+    color: #999;
+}
+.inputFields {
+    position: relative;
+    right: -5px;
+    box-sizing: border-box;
+}
+.inputFields i{
+    position: absolute;
+    left: -15px;
+    top: 40px;
+}
+.inputFields input:focus + i{
+    color: rgb(0, 187, 140);
 }
 
+
+
+
+
+/* LOGO AND HEADING  */
+
+/* logo  */
 .userLogo{
     display: flex;
     justify-content: center;
@@ -63,12 +102,23 @@ input[type=password]:focus {
     height: 5rem;
 }
 
+/* heading  */
+.headingDiv{
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    margin: 1rem;
+    justify-content: center;
+}
 .headingDiv h4{
     display: inline;
     margin-bottom: 0px;
     margin-top: 0px;
 }
 
+
+
+/* forgot password and BUTTON  */
 
 .forgotPassword{
     text-decoration: none;
@@ -96,13 +146,4 @@ input[type=password]:focus {
     font-size: 1.8rem;
     margin-top: 1.6rem;
 }
-
-
-label {
-    font-family: 'Oswald', sans-serif;
-    font-size: 0.8rem;
-    display: block;
-    color: #999;
-    transform: translate(0, 5px);
-  }
 
