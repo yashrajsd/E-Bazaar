@@ -9,39 +9,113 @@
     <link rel="shortcut icon" href="./images/favicon/favicon (2).ico" type="image/x-icon">
 
     <!-- stylesheets -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style_M_Login.css">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
-    
+
     <title>E-Bazaar Login</title>
 
 
     
 </head>
-<body>
-    <div class="mainContainer">
-        <div class="formContainer">
-            <form action="" method="get">
-                <div class="userLogo">
-                    <img class="userImage" src="./images/illustrations/userImage.jpg" >
-                </div>
-                <div class="headingDiv">
-                    <h4>WELCOME</h4>
-                </div>
-                <label for="username">USERNAME</label>
-                <i class="fa fa-user"></i>
-                <input type="text" name="username"  autocomplete="off">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" >
+<body style="display: flex; justify-content: center; align-items: center;">
 
-                <a class="forgotPassword" href="#">FORGOT PASSWORD</a>
+    <div class="row" style="height: 100vh; width: 100vw;">
 
-                <input type="button" class="btn" value="LOGIN">
-            </form>
+
+        <div class="col-lg-6" id="farmerSignIn" style="display: none;">
+            <div style="height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center;">
+                <form action="" method="get">
+                    <div class="headingDiv">
+                        <h4>Login</h4>
+                    </div>
+                    <label for="username">USERNAME</label>
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="username"  autocomplete="off">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" >
+            
+                    <a class="forgotPassword" href="#">FORGOT PASSWORD</a>
+            
+                    <input type="button" class="btn-1" value="LOGIN">
+                </form>
+            </div>
         </div>
+
+
+        <div style="display: none;" id="welcome-text-1" class="col-lg-6">
+            <div style=" width:100%; height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <h1 style="text-align: center;">Wecolme Back to <span style="color: #198754;">EBazaar</span></h1>
+                <button class="btn btn-outline-success" id="return-1">Return Back</button>
+            </div>
+        </div>
+
+        
+
+
+        
+
+        <div class="col-lg-6" id="farmer-sign-in" style="display: flex; justify-content: center;align-items: center; flex-direction: column;">
+            <h1 class="h1-1text">ARE YOU A<br><span style="color: #198754;">FARMER</span>??</h1>
+            <button type="button" class="btn btn-outline-success" id="farmer">SIGN IN</button>
+        </div>
+
+        <div class="col-lg-6" id="customer-sign-in"  style="display: flex; justify-content: center;align-items: center; flex-direction: column;">
+            <h1 class="h2-2-text">ARE YOU A<br><span style="color: #198754;">CUSTOMER</span>??</h1>
+            <button type="button" class="btn btn-outline-success" id="customer">SIGN IN</button>
+        </div>
+
+
+        <div style="display: none;" id="welcome-text-2" class="col-lg-6">
+            <div  style=" width: 100%;height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                <h1 style="text-align: center;">Wecolme Back to<span style="color: #198754;">EBazaar</span></h1>
+                <button class="btn btn-outline-success" id="return-2" >Return Back</button>
+            </div>
+        </div>
+
+        
+
+        <div class="col-lg-6" id="customerSignIn" style="display: none;">
+            <div style="height: 100vh; width: 100%; display: flex; justify-content: center; align-items: center;">
+                <form action="" method="get">
+                    <div class="headingDiv">
+                        <h4>Login</h4>
+                    </div>
+                    <label for="username">USERNAME</label>
+                    <i class="fa fa-user"></i>
+                    <input type="text" name="username"  autocomplete="off">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" >
+            
+                    <a class="forgotPassword" href="#">FORGOT PASSWORD</a>
+            
+                    <input type="button" class="btn-1" value="LOGIN">
+                </form>
+            </div>
+        </div>
+
     </div>
+    <div style="z-index: 2; position: absolute; height: 90vh; border: 3px solid black; background-color: BLACK;">
+
+    </div>
+    
+
+    <!-- Scripts-->
+        
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./Jquery/login.js"></script>
+    <script src="./css/bootstrap.js"></script>
+
+    <!--Body Ends-->
     
 </body>
 </html>
