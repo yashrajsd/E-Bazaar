@@ -1,0 +1,118 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 1vh 0 1vh;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/illustrations/signinbackground.jpg") no-repeat center center/cover;
+    z-index: -1;
+    display: block;
+    height: 100%;
+    width: 100%;
+
+}
+.nav{
+    
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-areas: 'left left left left left right';
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    margin-bottom: 4vh;
+
+}
+
+.nav h2{
+    grid-area: left;
+}
+
+form{
+    background-color: white;
+    /* border: 1px solid gray; */
+    border-radius: 20px;
+    padding: 6vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24vw;
+    /* position: relative; */
+}
+
+.btn{
+    background-color:  #008B00	;
+    width: 100%;
+    padding: 1vh;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10%; */
+    padding: 1vw;
+}
+
+input{
+    padding: 1vh;
+    outline: none;
+    border: 1px solid lightsteelblue;
+    margin: 2px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.light{
+    color: gray;
+    opacity: 0.8;
+    max-width: 80%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#trouble{
+    text-decoration: none;
+    color: black;
+    text-align: left;
+}
+
+
+.signUl{
+    display: flex;
+    width: 100%;
+    margin: 0px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.signLi{
+    list-style: none;
+    /* margin: 3px; */
+    border: 1px solid lightslategrey;
+    padding: 0.7vw;
+    border-radius: 8px;
+}
+
+.right{
+    grid-area: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#requestDemo{
+    margin-top: 0px;
+    margin-left: 2vw;
+}
