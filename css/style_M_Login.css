@@ -23,6 +23,12 @@ form{
 }
 
 
+/* input fields DECORATION  */
+.inputContainer {
+    position: relative;
+    right: -5px;
+    box-sizing: border-box;
+}
 input{
     border: none;
     border-bottom: 2px solid rgb(152, 164, 160);
@@ -33,15 +39,34 @@ input{
     margin-bottom: 0.5rem;
     width: 100%;
 }
+/* font icon  */
+i {
+    color: #999;
+}
+.inputContainer i{
+    position: absolute;
+    left: -15px;
+    top: 3rem;
+}
 
-input[type=text]:focus {
+
+/* FOCUS EVENT  */
+
+/* input  */
+input[type=text]:focus{
     border-bottom: 2.5px solid rgb(59, 220, 203);
     outline: none;
 }
-input[type=password]:focus {
+input[type=password]:focus{
     border-bottom: 2.5px solid rgb(62, 255, 204);
     outline: none;
 }
+
+/* font icon  */
+.inputContainer input:focus + i{
+    color: rgb(0, 187, 140);
+}
+
 
 
 .headingDiv{
