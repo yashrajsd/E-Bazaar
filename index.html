@@ -13,6 +13,9 @@
 
     <!-- Styles Links Ends-->
 
+    <!--AOS link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Font links -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +41,7 @@
         <!-- Navbar Starts -->
 
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand logo-">EBazaar</a>
+            <a class="navbar-brand logo-"><img src="./images/Ebazaaaaarlogo-2.png.png" alt="" style="height: 1.8em; width: 6em;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -51,7 +54,7 @@
                   <a href="#" class="nav-link nav-text">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link nav-text">Bazaar</a>
+                  <a href="bazaar.html" class="nav-link nav-text">Bazaar</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link nav-text">Contact Us</a>
@@ -67,7 +70,7 @@
 
         <hr>
         <!-- Navbar Ends -->
-
+        <!-- <img src="./images/index-images/pngwing.com (5).png" alt="" style="z-index: -1; position: absolute; height: 50vh; width: 50vh; transform: rotate(110deg); left: -15vh; top: 80vh;"> -->
     </div>
 
     <div class="row div-title">
@@ -89,7 +92,7 @@
                   <h5 class="card-title">Are you a Farmer?</h5>
                   <hr>
                     <p class="card-text">Increase your Profit and Customers with us!</p>
-                  <a href="#" class="btn btn-success">Sign Up Now</a>
+                  <a href="./signup.html" class="btn btn-success">Sign Up Now</a>
                 </div>
               </div>
             </div>
@@ -108,14 +111,59 @@
 
     </section>
 
+    <section id="" style="background-color: #198754;">
+
+      <h1 style="text-align: center; font-family: 'Montserrat', sans-serif; font-size: 4rem; margin-top: 10vh; color: white; position: relative; top: 7vh;">Why to choose us?</h1>
+        <div class="row" style="margin-top: 15vh;"> 
+        <div class="col-lg-4" style=" padding: 1rem; display: flex; justify-content: center; align-items: center;">
+          <div class="div-i shadow p-3 mb-5 bg-body rounded"> 
+          </div>
+        </div>
+
+        <div class="col-lg-4" style="padding: 1rem; display: flex; justify-content: center; align-items: center;">
+          <div class="div-i shadow p-3 mb-5 bg-body rounded">
+
+          </div>
+        </div>
+
+        <div class="col-lg-4" style="padding:1rem; display: flex; justify-content: center; align-items: center;">
+          <div class="div-i shadow p-3 mb-5 bg-body rounded">
+
+          </div>
+        </div>
+      </div>
+      
+
+    </section>
+
     <!-- Section Division -->
 
-    <section id="" style="overflow: hidden;">
+    <section id="" style="overflow: hidden; margin-top: 20vh;">
+
+      </div>
         <div class="container-fluid" style="overflow: hideen;">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#198754" fill-opacity="1" d="M0,160L60,133.3C120,107,240,53,360,74.7C480,96,600,192,720,240C840,288,960,288,1080,256C1200,224,1320,160,1380,128L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
         </div>
+        
+
     </section>
 
-    <script src="./css/bootstrap.js"></script>
+
+    <!-- scripts-->
+  <script type="text/javascript" src="./Jquery/vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelector(".div-i"), {
+      max: 25,
+      speed: 400
+    });
+    
+    //It also supports NodeList
+    VanillaTilt.init(document.querySelectorAll(".div-i"));
+  </script>
+  <script src="./css/bootstrap.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

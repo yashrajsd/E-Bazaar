@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/signup.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+</head>
+<body style="overflow: hidden;">
+        <div class="signup">
+            <div style="width: 50%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;" class="shadow p-3 mb-5 bg-white rounded">
+            <h1 style="font-size: 8vh; text-align: center;color: #198754; font-family: 'Kanit', sans-serif; position: relative; bottom: 4vh;">SIGN UP</h1>
+            <div style="display: flex; flex-direction: column;">
+                <div style="display: flex; flex-direction: column;">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                </div>
+
+                <div style="display: flex; flex-direction: column;">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                    </div>
+                <div>
+                    <button type="submit btn btn-primary" id="sign-up" name="sign-up" style="border-radius: 10px; background-color: solid green 3px; color: green;">Sign UP</button>
+                </div>
+            </div>
+            </div>
+            <div style="width: 50%; height: 100%; display: flex; justify-content: center;align-items: center;">
+                <img src="./images/illustrations/undraw_Mobile_posts_re_bpuw.png" alt="" style="height: 45vh; width: auto;">
+            </div>
+        </div>
+<script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC2bhC1WTlamB0IQIawNMa1Vxp4P90F8fQ",
+  authDomain: "ebazaar-b824f.firebaseapp.com",
+  projectId: "ebazaar-b824f",
+  storageBucket: "ebazaar-b824f.appspot.com",
+  messagingSenderId: "355487518673",
+  appId: "1:355487518673:web:31d4320b182d9e5da95af0"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+        const auth = getAuth();
+
+document.getElementById("sign-up").addEventListener('click',(e)=>{
+
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var username = document.getElementById('username').value;
+            
+    createUserWithEmailAndPassword(auth, email, password, username)
+  .then((userCredential) => {
+    // Signed in 
+    const user = userCredential.user;
+    // ...
+    alert('User created Successfully');
+    
+  })
+  .catch((error) => {
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+    // ..
+    });
+
+});
+      </script>
+<script src="./signup.js"></script>
+</body>
+</html>
